@@ -1,7 +1,9 @@
 # Soruto-Blog-Manager
-Soruto Blogの管理ツールです。
+Soruto Blog専用管理ツール
 
 Built with Electron
+### ダウンロード
+[ここをクリックしてダウンロード](https://github.com/SorutoProject/Soruto-Blog-Manager/releases)できます。
 
 ### 使い方
 * **前提**  
