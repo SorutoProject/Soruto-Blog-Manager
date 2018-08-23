@@ -1,0 +1,14 @@
+{
+  "name": "soruto-blog-manager",
+  "version": "1.0.0",
+  "description": "Soruto Blog専用管理マネージャー。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Soruto Project",
+  "license": "MIT",
+  "dependencies": {
+    "ftp": "^0.3.10"
+  }
+}

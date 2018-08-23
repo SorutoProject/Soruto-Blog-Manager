@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+  <title>Soruto Blog Manager</title>
+  <link rel="stylesheet" href="manager.css">
+  <link rel="stylesheet" href="checked.css">
+  <script src="manager.js"></script>
+  <meta charset="utf-8"> </head>
+<body>
+  <div id="menu">
+	  Soruto Blog 管理ツール<br><br>
+	  <a href="javascript:void(0);" id="menuNew" class="menuLink noselected" onclick="newArticle();">新しい記事</a>
+	  <a href="javascript:void(0);" id="menuList" class="menuLink selected" onclick="moveToList();">記事一覧</a>
+	  <a href="javascript:void(0);" id="menuEdit" class="menuLink noselected" onclick="moveToEdit();">編集画面</a>
+	  <a href="javascript:void(0);" id="menuSetting" class="menuLink noselected" onclick="moveToSetting();">設定</a>
+	  <a href="javascript:void(0);" id="menuNew" class="menuLink noselected" onclick="updateList();">記事一覧を更新</a>
+  </div>
+  <div id="list">記事一覧</div>
+  <div id="edit">
+	<span id="fileInfo">現在ファイルは開かれていません</span>　<button onclick="fileSaveAndUpload();">保存してアップロード</button><br><input type="text" id="articleName" placeholder="ファイル名..."><br>
+	<textarea id="editor"></textarea>
+  </div>
+  <div id="setting">
+	  <b>FTPの設定</b>
+	  <br>ホスト名<br>
+	  <input type="text" id="ftpHostName" class="ftpSet">
+	  <br>ユーザー名<br>
+	  <input type="text" id="ftpUserName" class="ftpSet">
+	  <br>パスワード<br>
+	  <input type="password" id="ftpPassWord" class="ftpSet">
+	  <br><br>サーバーのArticleフォルダのパス<br>(サーバーのルートフォルダにインストールした場合は /articles)<br>
+	  <input type="text" id="ftpDirectory" class="ftpSet"><br>
+	  <br><br><button onclick="ftpSetSave();">　保存　</button>
+  </div>
+</body>
+</html>
